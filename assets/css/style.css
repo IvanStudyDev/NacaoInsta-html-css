@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/fundo.jpg');
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nacaoinsta-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.nacaoinsta-celular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.nacaoinsta-celular img{
+    height: 45rem;
+}
+
+.nacaoinsta-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0.842);
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-bottom: 1rem;
+    border: 2px solid whitesmoke;
+}
+.grupo:nth-child(1){
+    min-height: 19rem;
+}
+
+.nacaoinsta-logo{
+    height: 4.5rem;
+}
+
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.foto-perfil img{
+    height: 7rem;
+}
+
+.nacaoinsta-login{
+    background-color: whitesmoke;
+    color: red;
+    padding: 8px;
+    border-radius: 4px;
+}
+.nacaoinsta-logout{
+    color: whitesmoke;
+}
+
+.not-account{
+    color: #808080;
+}
+
+.link-cor{
+    color: whitesmoke;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.get-app{
+    color: whitesmoke;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-dowrload{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-dowrload:nth-child(1){
+    background-image: url('../images/apple-button.png');
+}
+.app-dowrload:nth-child(2){
+    background-image: url('../images/googleplay-button.png');
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px){
+    .nacaoinsta-wrapper{
+        width: 90%; 
+    }
+}
+@media (max-width: 650px){
+    body{
+        background-image: none;
+        background-color: black;
+    }
+    .nacaoinsta-wrapper{
+        width: 90%;
+    }
+    .nacaoinsta-celular{
+        display: none;
+    }
+    .nacaoinsta-continue{
+        width: 100%;
+    }
+    .grupo{
+        border: 1px solid transparent;
+    }
+}
